@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-color:">
+<script type="text/javascript">
+// make constant
+//const  PI=3.141;
+
+//use if let
+//for(let i=1;i<=10;i++)
+//{
+	//console.log(i + "   " + PI);
+
+	// string token just place dollar and curly bracket
+
+//	console.log(`${i} value of PI is: ${PI}`);
+
+//}
+//console.log(i);  let has only block scope
+
+
+
+//----------------------------
+ // function sum(a,b)
+ // {
+ // 	console.log(a+b);
+ // }
+
+ // var sum= function(a,b){
+ // 	console.log(a+b);	
+ // }
+
+ //by FAT arrow of es6
+
+ // var sum = (a,b) =>{
+ // 	console.log("hello");
+ // 	console.log(`${a+b}`);
+ // }
+
+ //BY FAT ARROW SINGLE LINE
+
+ //var fact=(x)=> 'hell0';
+ //var fact=(x)=>{ return(120) };
+ //console.log(fact(5));
+
+
+ //sum(10,20);
+
+
+
+ //---------DEFAULT PARAMETER-----------------------
+
+
+//  var sum = (a=100,b=100) =>{ 
+//  	return(a+b) ;
+//  };
+
+// console.log(sum(200,800));
+
+
+ //---------create class-----------------------
+
+ class MyClass{
+ 	constructor(name,age)
+ 	{
+ 		this.name=name;
+ 		this.age= age;
+ 	}
+
+ 	display(){
+ 		this.name += " chana";
+ 		console.log(this.name );
+ 	}
+ }
+ class MyDeriveClass extends MyClass{
+
+ 	constructor(name,age,salary)
+ 	{
+ 		super(name,age);
+ 		this.salary= salary;
+ 	}
+
+ 	display1(){
+ 		console.log(`${this.name} , ${this.age}  ${this.salary}`);
+ 	}
+
+
+
+ }
+
+ //var obj = new MyClass('prince','34');
+ //obj.display();
+ //console.log(obj);
+
+
+ var obj= new MyDeriveClass('prince',34,40000);
+ obj.display1();
+ obj.display();
+
+
+</script>
+</body>
+</html>
